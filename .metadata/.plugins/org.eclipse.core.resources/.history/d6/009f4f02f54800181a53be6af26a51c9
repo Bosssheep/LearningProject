@@ -1,0 +1,12 @@
+package com.ShotestPath;
+
+public class ShotestPath {
+
+	
+	public static void Path(int[][] arr,int vertex){
+		int i,j,k,b,e,min;  
+	    int[] w = new int[vertex];  
+	    int[] path = new int[vertex];  
+	    int[] temp = new int[vertex];  
+	}
+}

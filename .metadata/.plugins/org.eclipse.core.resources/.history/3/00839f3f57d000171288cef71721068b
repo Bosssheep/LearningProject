@@ -1,0 +1,14 @@
+package day18;
+
+import java.util.ArrayList;
+
+public class IteratorDemo {
+
+	private static void mian(String[] args) {
+		/*
+		 * 迭代器:	面向接口
+		 */
+		Collection<String> coll = new ArrayList<String>();
+
+	}
+}

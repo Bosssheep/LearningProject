@@ -1,0 +1,9 @@
+package com.servlet;
+/**
+ * 列表页面初始化控制
+ * @author HYChan
+ *
+ */
+public class ListServlet {
+
+}

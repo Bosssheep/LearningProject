@@ -1,0 +1,28 @@
+package day18;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+public class IteratorDemo {
+
+	private static void mian(String[] args) {
+		/*
+		 * 迭代器:	面向接口
+		 */
+		Collection<String> coll = new ArrayList<String>();
+		coll.add("abc1");
+		coll.add("abc2");
+		coll.add("abc3");
+		coll.add("abc4");
+		
+		/*
+		 * 迭代器,对ArrayList中的元素进行取出
+		 */
+		
+		//1、调用iterator获取出Iterator接口的实现类
+		Iterator<String> it = coll.iterator();
+		
+
+	}
+}

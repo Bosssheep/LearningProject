@@ -1,0 +1,19 @@
+package DateLearn;
+
+import java.util.Date;
+
+public class DateDemo {
+
+	public static void main(String[] args) {
+		
+		//获取当前日期毫秒值
+		//long times = System.currentTimeMillis();
+		
+		Demo();
+	}
+
+	public static void Demo(){
+		Date date = new Date();
+		System.out.println(date);
+	}
+}

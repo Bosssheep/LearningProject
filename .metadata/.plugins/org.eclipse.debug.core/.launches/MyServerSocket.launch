@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ChatRoomServer/src/com/chatserversocket/main/MyServerSocket.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.chatserversocket.main.MyServerSocket"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ChatRoomServer"/>
+</launchConfiguration>

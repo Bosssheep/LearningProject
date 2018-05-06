@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- maximum-scale=1.0 与 user-scalable=no 一起使用。这样禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉。--!>
+ <!--<meta name="viewport" content="width=device-width, 
+                                    initial-scale=1.0, 
+                                    maximum-scale=1.0,
+                                    user-scalable=no">  --!> 
+
+      <title>华创俱乐部报名表</title>
+
+      <!-- 引入 Bootstrap -->
+      <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      
+      
+   </head>
+   <body>
+        <h1 align="center">请填写表格</h1>
+
+        <form class="form-horizontal" role="form" action="join_do.jsp" method="post">
+        <div class="form-group"> 
+          <label for="name" class="col-sm-4 control-label">姓名</label> 
+          <div class="col-sm-4">
+          	<input type="text" class="form-control" name="Name" placeholder="必填"  required="required">
+          </div>
+        </div> 
+
+        <div class="form-group"> 
+          <label for="Sex" class="col-sm-4 control-label">性别</label> 
+          <div class="col-sm-1">
+              <select class="form-control" name="Sex">
+	              <option value="男">男生</option>
+	              <option value="女">女生</option>
+              </select>
+         </div>
+        </div>
+
+        <div class="form-group"> 
+          <label for="Academy" class="col-sm-4 control-label">学院</label> 
+          <div class="col-sm-4">
+              <select class="form-control" name="Academy">
+	              <option value="通信工程学院">通信工程学院</option>
+	              <option value="电子工程学院">电子工程学院</option>
+	              <option value="计算机学院">计算机学院</option>
+	              <option value="软件学院">软件学院</option>
+	              <option value="机电工程学院">机电工程学院</option>
+	              <option value="网络与信息安全学院">网络与信息安全学院</option>
+	              <option value="物理与光电工程学院">物理与光电工程学院</option>
+	              <option value="生命科学技术学院">生命科学技术学院</option>
+	              <option value="空间与科学技术学院">空间与科学技术学院</option>
+	              <option value="先进材料与纳米科技学院">先进材料与纳米科技学院</option>
+	              <option value="微电子学院">微电子学院</option>
+	              <option value="马克思主义学院">马克思主义学院</option>
+	              <option value="经济与管理学院">经济与管理学院</option>
+	              <option value="数学与统计学院">数学与统计学院</option>
+	              <option value="外国语学院">外国语学院</option>
+	              <option value="国际教育学院">国际教育学院</option>
+	              <option value="人文学院">人文学院</option>
+	              <option value="网络与继续教育学院">网络与继续教育学院</option>
+              </select>
+         	</div>
+         </div>
+
+         <div class="form-group"> 
+          	<label for="name" class="col-sm-4 control-label">手机号</label> 
+          	<div class="col-sm-4">
+          		<input type="text" class="form-control" name="Phone"  placeholder="必填" required="required">
+          	</div>
+         </div> 
+        
+         <div class="form-group"> 
+          	<label for="QQ" class="col-sm-4 control-label">QQ</label> 
+          	<div class="col-sm-4">
+          		<input type="text" class="form-control" name="QQ" required="required">
+          	</div>
+         </div> 
+
+        <div class="form-group">
+          
+          <label for="Introduce" class="col-sm-4  control-label">自我介绍</label>
+          <div class="col-sm-4">
+          	<textarea class="form-control" rows="6" placeholder="必填" name="Introduce">介绍一下你自己吧</textarea>
+          </div>
+        </div>
+
+
+        <div class="form-group"> 
+          <label for="Department" class="col-sm-4 control-label">希望加入的部门</label> 
+          <div class="col-sm-4">  
+            <label class="checkbox-inline"><input type="checkbox" name="Department" value="运营部"> 运营部  </label>
+            <label class="checkbox-inline"><input type="checkbox" name="Department" value="技术部"> 技术部  </label> 
+            <label class="checkbox-inline"><input type="checkbox" name="Department" value="宣传部"> 宣传部  </label> 
+            <label class="checkbox-inline"><input type="checkbox" name="Department" value="花粉部"> 花粉部  </label> 
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="Adjust" class="col-sm-4 control-label">是否接受调剂</label>
+          <div class="col-sm-4">
+              <label class="radio-inline"><input value="1" name="Adjust" checked="checked" type="radio">是</label>
+              <label class="radio-inline"><input value="0" name="Adjust" type="radio">否 </label>
+          </div>
+        </div>
+
+
+
+       <div class="form-group">
+         <div class="col-sm-offset-4 col-sm-10">
+           <button type="submit" class="btn btn-default">提交</button>
+        </div>
+      </div>
+     </form>
+     
+      <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="js/bootstrap.min.js"></script>
+      
+
+   </body>
+</html>

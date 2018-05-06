@@ -1,0 +1,28 @@
+package homework1_2;
+
+public class Book {
+	String bookName;
+	
+	public Book(){
+		
+	}
+
+	public Book(String bookName){
+		this.bookName = bookName;
+	}
+
+	@Override
+	public String toString() {
+		return "Book [bookName=" + bookName + "]";
+	}
+
+	public String getBookName() {
+		return bookName;
+	}
+
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+	
+	
+}
